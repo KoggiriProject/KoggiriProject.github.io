@@ -1,0 +1,6 @@
+[build]
+command = "next build" 	// next export는 하지 않는다.
+publish = "out"	
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"
