@@ -436,6 +436,7 @@ body a:hover {
   font-size: 35px;
   line-height: 44px;
   display: block;
+  padding-bottom: 16px;
 }
 
 .blog-item-holder .excerpt {
