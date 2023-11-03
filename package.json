@@ -6,9 +6,7 @@
     "dev": "next dev -p 3005",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "predeploy": "yarn next build",
-    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
+    "lint": "next lint"
   },
   "dependencies": {
     "@fontsource/lato": "^5.0.12",
@@ -37,6 +35,5 @@
     "eslint": "8.52.0",
     "eslint-config-next": "14.0.1",
     "gh-pages": "^6.0.0"
-  },
-  "homepage": "https://KoggiriProject.github.io/light_studio"
+  }
 }

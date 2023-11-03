@@ -2,7 +2,7 @@
 const nextConfig = {
   output: "export",
   trailingSlash: true,
-  basePath: "/light_studio",
+  basePath: "/",
 };
 
 module.exports = nextConfig;
