@@ -3,11 +3,46 @@ import "@/styles/sm-clean.css";
 import "@/styles/common.css";
 import "@/styles/globals.css";
 import "@/styles/our-styles.css";
-import "@/styles/fonts.css";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import type { Metadata } from "next";
+import localFont from "next/font/local";
+
+const pretendard = localFont({
+  src: [
+    {
+      path: "../assets/fonts/Pretendard-Light.woff",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/Pretendard-Regular.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/Pretendard-Medium.woff",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/Pretendard-SemiBold.woff",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/Pretendard-Bold.woff",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/Pretendard-ExtraBold.woff",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+});
 
 export const metadata: Metadata = {
   title: "자연광 스튜디오 렌탈 Light Studio",
@@ -33,7 +68,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={pretendard.className}>
         <div className="site-wrapper">
           <Header />
           {children}

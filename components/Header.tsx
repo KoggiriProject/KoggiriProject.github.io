@@ -67,19 +67,16 @@ const Header = () => {
 
       <AnimatePresence>
         {menuPreview && (
-          <motion.div
+          <div
             key="nav-wrapper"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
             className="menu-wraper center-relative"
             onClick={handleCloseMenu}
           >
             <motion.div
               key="nav-holder"
-              initial={{ transform: `translateY(30px)` }}
+              initial={{ transform: `translateY(50px)` }}
               animate={{ transform: `translateY(0px)` }}
-              exit={{ transform: `translateY(30px)` }}
+              exit={{ transform: `translateY(50px)` }}
               className="menu-holder"
             >
               <nav id="header-main-menu" className="big-menu">
@@ -204,12 +201,26 @@ const Header = () => {
                     }}
                   >
                     <div className="social">
-                      <Link href="http://google.com" target="_blank">
+                      <Link
+                        href="/"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.alert("준비중입니다.");
+                          return false;
+                        }}
+                      >
                         <FontAwesomeIcon icon={faGooglePlusSquare} />
                       </Link>
                     </div>
                     <div className="social">
-                      <Link href="http://instagram.com" target="_blank">
+                      <Link
+                        href="/"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.alert("준비중입니다.");
+                          return false;
+                        }}
+                      >
                         <FontAwesomeIcon icon={faInstagram} />
                       </Link>
                     </div>
@@ -217,7 +228,7 @@ const Header = () => {
                 </ul>
               </nav>
             </motion.div>
-          </motion.div>
+          </div>
         )}
       </AnimatePresence>
     </>

@@ -1,11 +1,12 @@
 body {
-  font-family: "Noto Serif KR", serif;
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
   color: #444;
   background-color: #e6e6dd;
   letter-spacing: 0.5px;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body a {
@@ -1479,6 +1480,35 @@ li.social-footer a:first-child {
   .content-wrapper p {
     font-size: 14px;
     padding: 8px 0;
+  }
+
+  .about .room-holder {
+    display: flex;
+    align-items: center;
+  }
+
+  .about .room-holder .room {
+    position: relative;
+  }
+
+  .about .room-holder .room .room-social-holder {
+    padding: 0 20px;
+  }
+
+  .about .room-holder .room img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about .room-info {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+
+  .about .room-info:hover {
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }
 

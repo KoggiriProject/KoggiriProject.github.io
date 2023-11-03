@@ -1,8 +1,10 @@
+"use client";
+
 import Link from "next/link";
 
 const About = () => {
   return (
-    <div className="page">
+    <div className="page about">
       <div id="content" className="site-content">
         <div className="header-content content-1170 center-relative block">
           <h1 className="entry-title">
@@ -184,21 +186,36 @@ const About = () => {
                 <br />
                 <br />
                 <Link
-                  href="https://twitter.com/"
+                  href="/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.alert("준비중입니다.");
+                    return false;
+                  }}
                   style={{ color: "white", lineHeight: "28px" }}
                 >
                   Blog
-                </Link>{" "}
+                </Link>
                 <br />
                 <Link
-                  href="https://www.facebook.com/"
+                  href="/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.alert("준비중입니다.");
+                    return false;
+                  }}
                   style={{ color: "white", lineHeight: "28px" }}
                 >
                   Facebook
-                </Link>{" "}
+                </Link>
                 <br />
                 <Link
-                  href="https://www.instagram.com/"
+                  href="/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.alert("준비중입니다.");
+                    return false;
+                  }}
                   style={{ color: "white", lineHeight: "28px" }}
                 >
                   Instagram
